@@ -29,7 +29,7 @@ public class CategoryController {
     @RequestMapping(value = "add", method = RequestMethod.GET)
     public String add(Model model) {
         model.addAttribute(new Category());
-        model.addAttribute("title", "Add Category");
+        model.addAttribute("title", "Add Menu");
         return "category/add";
     }
     @RequestMapping(value = "add", method = RequestMethod.POST)
