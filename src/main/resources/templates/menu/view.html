@@ -7,7 +7,7 @@
 
         <nav th:replace="fragments :: navigation"></nav>
 
-        <p th:unless="${menu.cheeses} and ${menus.cheeses.size()}">No Ingredients</p>
+        <p th:unless="${menu.cheeses}">No Ingredients</p>
 
         <ul>
             <li th:each="cheese : ${menu.cheeses}">
